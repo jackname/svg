@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVGEditor</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            font: 14px/1.6 'Microsoft YaHei';
+        }
+
+        .clearfix::after {
+            content: '';
+            height: 1px;
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        .editor-box {
+            width: 100%;
+            height: 100%;
+        }
+
+        .action-show {
+            float: left;
+            width: 100%;
+            height: 100%;
+        }
+
+        .action-box {
+            position: absolute;
+            right: 0;
+            width: 240px;
+            height: 100%;
+            border-left: 1px solid #f7f7f7;
+            background-color: #fff;
+        }
+
+        .action-box h2 {
+            padding: 4px 0 4px 10px;
+            margin-bottom: 14px;
+            font-size: 16px;
+            border-bottom: 1px solid #edf3eb;
+            color: #007fff;
+        }
+
+        .create {
+            padding-bottom: 14px;
+        }
+
+        .create button {
+            -webkit-appearance: none;
+            display: inline-block;
+            margin: 0 8px;
+            padding: 2px 4px;
+            color: #007fff;
+            border: 1px solid #007fff;
+            border-radius: 2px;
+            background-color: transparent;
+            transition: all .6s;
+            cursor: pointer;
+        }
+
+        .create button:hover {
+            color: #fff;
+            background-color: #007fff;
+        }
+
+        .action-box label {
+            display: block;
+            margin-bottom: 8px;
+            padding-left: 10px;
+            color: #949494;
+        }
+
+        .action-box input {
+            margin-left: 5px;
+        }
+
+        .hengshu {
+            margin: 0px 10px 5px;
+        }
+
+        .create-shape input[type=range]{
+            vertical-align: middle;
+        }
+        .create-shape label span{
+            margin-left: 5px;
+        }
+        .btn_block button{
+            display: block;
+            margin: 5px 0 0 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="editor-box clearfix">
+    <!-- 左侧展示 -->
+    <div class="action-show">
+        <svg id="svg" width="100%" height="100%" style="background-color: rgb(0, 139, 139);">
+            <line id="aaa1"></line>
+        </svg>
+    </div>
+    <!-- 右侧操作 -->
+    <div class="action-box">
+        <h2>创建</h2>
+        <div class="create">
+            <select class="selectChange" style="margin: 0 0 0 15px">
+                <option value="line">线条</option>
+                <option value="rect">开关</option>
+                <option value="text">文字</option>
+                <option value="image" t="dianrong0">电容</option>
+                <option value="image" t="CompensatorMPT2">MPT电容</option>
+                <option value="image" t="ground">接地</option>
+                <option value="image" t="ied0">保护</option>
+                <option value="image" t="fuse0">耐张段保护</option>
+                <option value="image" t="other">中性</option>
+                <!--<option value="image" t="switcher0">开关</option>-->
+                <option value="image" t="onoffH0">刀闸</option>
+                <option value="image" t="tfStation">站用变两相</option>
+                <option value="image" t="tfStation3">站用变三相</option>
+                <!--<option value="image" t="tfThree0">三卷变</option>-->
+            </select>
+            <button id="line" sname="" class="changeName" type="button">创建</button>
+            <!--<button id="image">img</button>-->
+            <!--&lt;!&ndash;<button id='ellipse'>ellipse</button>&ndash;&gt;-->
+            <!--<button id="line">line</button>-->
+        </div>
+        <h2>形状</h2>
+        <div class="create-shape" id="xz"></div>
+        <h2>层级</h2>
+        <div><input type="button" id="zindex_1" value="最上层"><input type="button" id="zindex_2" value="最下层"></div>
+        <h2 class="ihide">外观和变换</h2>
+        <div class="face ihide">
+            <label>填充<input type="color" id="fill"></label>
+            <label>描边<input type="color" id="stroke"></label>
+            <label>描边大小<input type="range" id="stroke-width"></label>
+
+        </div>
+        <div style="margin: 20px 0 0 0px;color: #949494;font-size: 12px;border-top: 1px solid #edf3eb;padding: 5px 0 0 10px">ps：删除请选中该元素再按delete</div>
+        <div class="create btn_block">
+            <button id="fuzhi" type="button">复制svg</button>
+            <button id="save" type="button">保存记录</button>
+            <button id="qingchu" type="button">清除记录</button>
+            <button id="clear" type="button">一键清除svg内容</button>
+        </div>
+    </div>
+</div>
+<script src='js/jquery-3.2.1.min.js'></script>
+<script src='js/clipboard.min.js'></script>
+<script src='js/snap.svg-min.js'></script>
+<script src='js/SVGEditor.js'></script>
+</body>
+</html>

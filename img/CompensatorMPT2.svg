@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:cge="http://www.cim.com" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 48 48" >
+  <def>
+    <symbol id="terminal" preserveAspectRatio="xMinYMin meet" style="overflow:visible">
+	  <circle cx="0" cy="0" r="1" stroke="yellow" fill="yellow" stroke-width="1"/>
+	</symbol>
+  </def>
+  <g x="0" y="0" width="48" height="48">
+     <use x="33" y="4" xlink:href="#terminal"/>
+      <rect fill="none" stroke="#ff0000" stroke-width="1" x="9" y="13" width="8" height="19"/>
+      <line fill="none" stroke="#ff0000" stroke-width="1" x1="9" y1="15" x2="17" y2="15"/>
+      <line fill="none" stroke="#ff0000" stroke-width="1" x1="9" y1="17" x2="17" y2="17"/>
+      <line fill="none" stroke="#ff0000" stroke-width="1" x1="9" y1="28" x2="17" y2="28"/>
+      <line fill="none" stroke="#ff0000" stroke-width="1" x1="9" y1="30" x2="17" y2="30"/>
+      <line fill="none" stroke="#ff0000" stroke-width="1" x1="13" y1="32" x2="13" y2="36"/>
+      <line fill="none" stroke="#ff0000" stroke-width="1" x1="9" y1="36" x2="17" y2="36"/>
+      <line fill="none" stroke="#ff0000" stroke-width="1" x1="16" y1="38" x2="10" y2="38"/>
+      <line fill="none" stroke="#ff0000" stroke-width="1" x1="12" y1="40" x2="14" y2="40"/>
+      <circle fill="none" stroke="#ff0000" stroke-width="1" cx="33" cy="41" r="6"/>
+      <circle fill="none" stroke="#ff0000" stroke-width="1" cx="33" cy="31" r="6"/>
+      <circle fill="none" stroke="#ff0000" stroke-width="1" cx="25" cy="36" r="6"/>
+      <line fill="none" stroke="#ff0000" stroke-width="1" x1="33" y1="25" x2="33" y2="4"/>
+      <polyline fill="none" stroke="#ff0000" stroke-width="1" points="13,13 13,10 33,10 "/>
+	  
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:cge="http://www.cim.com" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 32 32" >
+  <def>
+    <symbol id="terminal" preserveAspectRatio="xMinYMin meet" style="overflow:visible">
+	  <circle cx="0" cy="0" r="1" stroke="yellow" fill="yellow" stroke-width="1"/>
+	</symbol>
+  </def>
+  <g x="0" y="0" width="32" height="32">
+      <use x="16" y="3" xlink:href="#terminal"/>
+	 
+      <line fill="#ffff00" stroke="#ff0000" stroke-width="1" x1="16" y1="3" x2="16" y2="16"/>
+	  
+      <line fill="#ffff00" stroke="#ff0000" stroke-width="1" x1="8" y1="16" x2="24" y2="16"/>
+      <line fill="#ffff00" stroke="#ff0000" stroke-width="1" x1="10" y1="20" x2="22" y2="20"/>
+      <!-- <line fill="#ffff00" stroke="#ff0000" stroke-width="1" x1="12" y1="24" x2="20" y2="24"/> -->
+	  
+  </g>
+</svg>

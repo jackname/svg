@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:cge="http://www.cim.com" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 32 32" >
+  <def>
+    <symbol id="terminal" preserveAspectRatio="xMinYMin meet" style="overflow:visible">
+	  <circle cx="0" cy="0" r="1" stroke="yellow" fill="yellow" stroke-width="1"/>
+	</symbol>
+  </def>
+  <g x="0" y="0" width="32" height="32">
+     <rect fill="none" stroke="#cacaca" stroke-width="1" x="3" y="8" width="27" height="17"/>
+      <rect fill="#ff0000" stroke="#cacaca" stroke-width="1" x="5" y="10" width="16" height="11"/>
+      <rect fill="#000000" stroke="#cacaca" stroke-width="1" x="24" y="10" width="3" height="11"/>
+	 
+	  
+  </g>
+</svg>
