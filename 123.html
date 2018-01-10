@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVGEditor</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            font: 14px/1.6 'Microsoft YaHei';
+        }
+
+        .clearfix::after {
+            content: '';
+            height: 1px;
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        .editor-box {
+            width: 100%;
+            height: 100%;
+        }
+
+        .action-show {
+            float: left;
+            width: 100%;
+            height: 100%;
+        }
+
+        .action-box {
+            position: absolute;
+            right: 0;
+            width: 240px;
+            height: 100%;
+            border-left: 1px solid #f7f7f7;
+            background-color: #fff;
+        }
+
+        .action-box h2 {
+            padding: 4px 0 4px 10px;
+            margin-bottom: 14px;
+            font-size: 16px;
+            border-bottom: 1px solid #edf3eb;
+            color: #007fff;
+        }
+
+        .create {
+            padding-bottom: 14px;
+        }
+
+        .create button {
+            -webkit-appearance: none;
+            display: inline-block;
+            padding: 2px 4px;
+            margin: 0 8px;
+            color: #007fff;
+            border: 1px solid #007fff;
+            border-radius: 2px;
+            background-color: transparent;
+            transition: all .6s;
+            cursor: pointer;
+        }
+
+        .create button:hover {
+            color: #fff;
+            background-color: #007fff;
+        }
+
+        .action-box label {
+            display: block;
+            margin-bottom: 8px;
+            padding-left: 10px;
+            color: #949494;
+        }
+
+        .action-box input {
+            margin-left: 5px;
+        }
+
+        .hengshu {
+            margin: 0px 10px 5px;
+        }
+
+        .create-shape input[type=range]{
+            vertical-align: middle;
+        }
+        .create-shape label span{
+            margin-left: 5px;
+        }
+        .btn_block button{
+            display: block;
+            margin: 5px 0 0 10px;
+        }
+    </style>
+</head>
+<body>
+        <svg id="svg" width="100%" height="100%" style="background-color: rgb(0, 139, 139);">
+            <line id="aaa1"></line>
+        <desc>Created with Snap</desc><defs><marker viewBox="0 0 13 13" markerWidth="13" markerHeight="13" orient="auto" refX="2" refY="5" id="Sjc5z80gm3"><path d="M2,2 L2,8 L9,5 L2,2" fill="#000000" style=""></path></marker><rect width="10" height="10" class="svg---mgr"></rect></defs><line x1="50" x2="150" y1="50" y2="50" stroke="#000000" style="stroke-width: 5;" transform="matrix(1,0,0,1,272,141)"></line><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/dianrong0.svg" preserveAspectRatio="none" x="10" y="10" width="80" height="80" transform="matrix(1,0,0,1,402,144)"></image><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/ground.svg" preserveAspectRatio="none" x="10" y="10" width="80" height="80" transform="matrix(1,0,0,1,274,201)"></image></svg>
+    </body>
+</html>

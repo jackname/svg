@@ -58,8 +58,8 @@
         .create button {
             -webkit-appearance: none;
             display: inline-block;
-            margin: 0 8px;
             padding: 2px 4px;
+            margin: 0 8px;
             color: #007fff;
             border: 1px solid #007fff;
             border-radius: 2px;
@@ -84,7 +84,7 @@
             margin-left: 5px;
         }
 
-        .hengshu {
+        .hengshu,.kongxin {
             margin: 0px 10px 5px;
         }
 
@@ -104,8 +104,9 @@
 <div class="editor-box clearfix">
     <!-- 左侧展示 -->
     <div class="action-show">
-        <svg id="svg" width="100%" height="100%" style="background-color: rgb(0, 139, 139);">
+        <svg id="svg" width="100%" height="100%" style="background-color: #000;">
             <line id="aaa1"></line>
+            <!--<rect x="200" y="100" width="40" height="80" stroke="blue" stroke-width="5" fill="black" fill-opacity="0"/>-->
         </svg>
     </div>
     <!-- 右侧操作 -->
@@ -139,9 +140,9 @@
         <div><input type="button" id="zindex_1" value="最上层"><input type="button" id="zindex_2" value="最下层"></div>
         <h2 class="ihide">外观和变换</h2>
         <div class="face ihide">
-            <label>填充<input type="color" id="fill"></label>
-            <label>描边<input type="color" id="stroke"></label>
-            <label>描边大小<input type="range" id="stroke-width"></label>
+            <label>填充<input type="color" id="fill" value="#FF0000"></label>
+            <label>描边<input type="color" id="stroke" value="#FF0000"></label>
+            <label>描边大小<input type="range" min="0" max="10" id="stroke-width" value="1"></label>
 
         </div>
         <div style="margin: 20px 0 0 0px;color: #949494;font-size: 12px;border-top: 1px solid #edf3eb;padding: 5px 0 0 10px">ps：删除请选中该元素再按delete</div>
@@ -156,6 +157,6 @@
 <script src='js/jquery-3.2.1.min.js'></script>
 <script src='js/clipboard.min.js'></script>
 <script src='js/snap.svg-min.js'></script>
-<script src='js/SVGEditor.min.js'></script>
+<script src='js/SVGEditor.js'></script>
 </body>
 </html>
